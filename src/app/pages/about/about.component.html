@@ -1,0 +1,16 @@
+<mat-card class="pad"><br>
+    <div fxLayout.gt-xs="row">
+        <div *ngFor="let a of about">
+            <p>
+                {{a.paragraph}}
+            </p>
+        </div>
+    </div>
+    <div fxLayout.gt-xs="row">
+        <div *ngFor="let a of about">
+            <p>
+                {{a.bullet}}
+            </p>
+        </div>
+    </div><br>
+</mat-card>

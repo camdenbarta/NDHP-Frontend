@@ -1,0 +1,45 @@
+<mat-card class="pad"><br>
+    <mat-card-title>Contact Us</mat-card-title>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+        <div fxLayoutAlign="center" class="form-row">
+            <mat-form-field appearance="outline" class="large">
+                <mat-label>Full name</mat-label>
+                <input ngModel required matInput placeholder="Enter full name" formControlName="name"/>
+            </mat-form-field>       
+        </div>
+
+        <div fxLayoutAlign="center" class="form-row">
+            <mat-form-field appearance="outline" class="large">
+                <mat-label>Email</mat-label>
+                <input ngModel required matInput placeholder="Enter email" formControlName="email"/>
+            </mat-form-field>
+        </div>
+
+        <div fxLayoutAlign="center" class="form-row">
+            <mat-form-field appearance="outline" class="large">
+                <mat-label>Phone Number</mat-label>
+                <input ngModel matInput placeholder="Phone Number" formControlName="phone"/>
+            </mat-form-field>
+        </div>
+
+        <div fxLayoutAlign="center" class="form-row">
+            <mat-form-field appearance="outline" class="large">
+                <mat-label>Message or Comment</mat-label>
+                <textarea ngModel matInput placeholder="Any thing you want to add or say" formControlName="message"></textarea>
+            </mat-form-field>
+        </div>
+   
+        <div fxLayoutAlign="center" class="form-row">
+            <button mat-stroked-button [disabled]="!contactForm.valid">Submit </button>
+            <a mat-stroked-button (click)="cancel()">Clear</a>
+        </div>
+    </form>
+    <br>
+</mat-card>
+
+<div *ngFor="let i of image">
+    <mat-card>
+        <img src={{i.image}}>
+    </mat-card>
+</div>

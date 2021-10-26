@@ -1,0 +1,27 @@
+<mat-toolbar class="color" fxLayout="row">
+    <div fxShow="true" fxHide.gt-sm="true">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/api/about">About</button>  
+            <button mat-menu-item routerLink="/api/archive">Archive</button>
+            <button mat-menu-item routerLink="/api/contact">Contact</button>
+            <button mat-menu-item routerLink="/api/meet-members">Meet the Members</button>                 
+            <button mat-menu-item routerLink="/api/news-letters">News Letters</button>
+            <button mat-menu-item routerLink="/api/policy-positions">Policy Positions</button>                 
+        </mat-menu>
+      </div>
+    <a mat-button routerLink="/api">
+        North Dakota Heritage Party
+    </a>
+    <div class="center" fxShow="true" fxHide.lt-md="true">
+        <a mat-button routerLink="/api/about">About</a>
+        <a mat-button routerLink="/api/archive">Archive</a>
+        <a mat-button routerLink="/api/contact">Contact</a>
+        <a mat-button routerLink="/api/meet-members">Meet the Members</a>
+        <a mat-button routerLink="/api/news-letters">News Letters</a>
+        <a mat-button routerLink="/api/policy-positions">Policy Positions</a>
+    </div>
+</mat-toolbar>
+

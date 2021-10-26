@@ -1,0 +1,51 @@
+<br>
+<mat-card>
+<!---
+    <mat-toolbar class="clear" fxLayout="row">
+        <div fxShow="true" fxHide.gt-sm="true">
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button class="font" mat-menu-item routerLink="/about-me">about me</button>  
+                <button class="font" mat-menu-item routerLink="/pastprojects">past projects</button>
+                <button class="font" mat-menu-item routerLink="/recommended-vendors">recommended vendors</button>
+                <button class="font" mat-menu-item routerLink="/all-services">services and pricing</button>                 
+                <button class="font" mat-menu-item routerLink="/testimonials">testimonials</button>
+                <button class="font" mat-menu-item routerLink="/trending">trending wedding floral</button>                 
+            </mat-menu>
+        </div>
+        <a class="font" mat-button routerLink="/">
+            home
+        </a>
+        <div class="center" fxShow="true" fxHide.lt-md="true">
+            <a class="font" mat-button routerLink="/about-me">about me</a>
+            <a class="font" mat-button routerLink="/pastprojects">past projects</a>
+            <a class="font" mat-button routerLink="/recommended-vendors">recommended vendors</a>
+            <a class="font" mat-button routerLink="/all-services">services and pricing</a>
+            <a class="font" mat-button routerLink="/testimonials">testimonials</a>
+            <a class="font" mat-button routerLink="/trending">trending wedding floral</a>
+        </div>
+    </mat-toolbar><br>
+-->
+    <div class="flex-grid">
+        <div class="col">
+            <mat-card-content>
+                <p>Contact Info:</p> 
+                <a class="link" href="mailto:ndheritageparty@gmail.com" target="_blank">ndheritageparty@gmail.com</a><br>
+                <a class="link" href="sms:7158511095&body=Hi Deven this is " target="_blank">(715)-851-1095</a><br>
+                <a href="http://maps.google.com/?q=Fargo, ND" target="_blank">Fargo, ND</a><br>
+            </mat-card-content>
+        </div>
+        <div class="col">
+            <mat-card-content>
+                <a mat-button href="https://www.facebook.com/651studiofloral" target="_blank"><mat-icon>facebook</mat-icon></a>
+                 <a mat-button href="https://www.pinterest.com/candacemarie79/" target="_blank"><mat-icon>P</mat-icon></a>
+                 <a mat-button href="https://www.instagram.com/651studiofloraldesign/" target="_blank"><mat-icon>photo_camera</mat-icon></a>
+             </mat-card-content>
+        </div>
+    </div>
+    <mat-card-content>
+        Created By: <a class="link" href="mailto:camdenbarta@gmail.com" target="_blank">Online Solutions LLC</a>
+    </mat-card-content>
+</mat-card>

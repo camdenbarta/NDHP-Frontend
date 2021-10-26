@@ -1,0 +1,25 @@
+.pad{
+    text-align: center;
+    margin: 2%;
+    background-color: #C9B884;
+    padding: 0%;
+    margin-bottom: 0%;
+    color:#6E0000;
+}
+
+.large{
+    width: 84%;    
+}
+
+$color-outline: #6E0000;
+
+mat-form-field {
+    // to change border color
+    ::ng-deep .mat-form-field-outline {
+        color: $color-outline !important;
+    }
+    // to change label color
+    ::ng-deep .mat-form-field-label {
+        color: $color-outline !important;
+    }
+}

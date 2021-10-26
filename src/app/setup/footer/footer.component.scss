@@ -1,0 +1,71 @@
+mat-card{
+    border-top: 5px solid #6E0000;
+    background-color: #C9B884;
+    color: #6E0000;
+    text-align: center; 
+}
+
+a{
+  color:#6E0000
+}
+
+a:link {
+  color: #6E0000;     
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #835F44;
+  background-color: transparent;
+  text-decoration: underline;
+}
+  
+a:active {
+  color: #717D3D;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+  
+/* Set a specific color for each brand */
+  
+/* Facebook */
+.fa-facebook {
+  background: #6E0000;
+  color: white;
+}
+
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+
+.font{
+  font-family: 'Arial Narrow', 'sans-serif';
+  font-size: medium;
+}
+
+.clear{
+  background-color: transparent;
+  color: #6E0000;   
+}
+
+.center{
+  margin: auto;
+}
