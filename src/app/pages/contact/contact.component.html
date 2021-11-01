@@ -19,7 +19,7 @@
         <div fxLayoutAlign="center" class="form-row">
             <mat-form-field appearance="outline" class="large">
                 <mat-label>Phone Number</mat-label>
-                <input ngModel matInput placeholder="Phone Number" formControlName="phone"/>
+                <input ngModel matInput placeholder="Phone number is optional" formControlName="phone"/>
             </mat-form-field>
         </div>
 
@@ -38,8 +38,9 @@
     <br>
 </mat-card>
 
-<div *ngFor="let i of image">
-    <mat-card>
-        <img src={{i.image}}>
+<div *ngFor="let i of image | filter:filterTerm">
+    <br>
+    <mat-card class="mat-elevation-z0" class='card'>
+        <img mat-card-img class='pos' src={{i.image}}>
     </mat-card>
 </div>

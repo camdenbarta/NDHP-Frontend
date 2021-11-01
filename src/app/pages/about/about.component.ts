@@ -8,6 +8,10 @@ import { ListService } from 'src/app/services/list.service';
 })
 export class AboutComponent implements OnInit {
   about: any;
+  filterTerm = 'About';
+  order=['First','Second','Third','Fourth','Fifth','Sixth'];
+  orderFilter: any;
+
 
   constructor(
     private listService: ListService
@@ -28,5 +32,4 @@ export class AboutComponent implements OnInit {
           console.log(error);
         });
   }
-
 }

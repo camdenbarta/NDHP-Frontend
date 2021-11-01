@@ -11,14 +11,25 @@ import { PolicyPositionsComponent } from './policy-positions/policy-positions.co
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MaterialModule } from 'src/material.module';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 
 @NgModule({
-  declarations: [AboutComponent, ArchiveComponent, ContactComponent, MembersComponent, NewslettersComponent, PolicyPositionsComponent, HomeComponent, NotFoundComponent],
+  declarations: [
+    AboutComponent, 
+    ArchiveComponent, 
+    ContactComponent, 
+    MembersComponent, 
+    NewslettersComponent, 
+    PolicyPositionsComponent, 
+    HomeComponent, 
+    NotFoundComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
-    MaterialModule
+    MaterialModule,
+    Ng2SearchPipeModule
   ]
 })
 export class PagesModule { }

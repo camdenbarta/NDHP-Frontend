@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup | any;
   submitted = false;
   image: any;
+  filterTerm = 'Contact';
 
   constructor(
     private createService: CreateService,
