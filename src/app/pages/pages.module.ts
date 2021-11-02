@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { PagesRoutingModule } from './pages-routing.module';
 import { AboutComponent } from './about/about.component';
 import { ArchiveComponent } from './archive/archive.component';
@@ -31,7 +31,8 @@ import { SafePipe } from './safe.pipe';
     CommonModule,
     PagesRoutingModule,
     MaterialModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    FlexLayoutModule
   ]
 })
 export class PagesModule { }
