@@ -23,4 +23,9 @@ export class ListService {
     return this.http.get(`${baseUrl}/member`)
   }
 
+  getNews(): Observable<any> {
+    return this.http.get(`${baseUrl}/letter`)
+  }
+  
+
 }

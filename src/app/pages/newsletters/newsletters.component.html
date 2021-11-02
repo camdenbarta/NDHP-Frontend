@@ -1,1 +1,252 @@
-<p>newsletters works!</p>
+<div *ngFor="let n of news | filter:order[0]">
+    <mat-card class="pad">
+        <p class="titleFont">
+            {{n.title}}
+        </p>
+        <p class="autFont">
+            {{n.author}}
+        </p>
+        <p>
+            {{n.body1}}
+        </p>
+        <p>
+            {{n.body2}}
+        </p>
+        <p>
+            {{n.body3}}
+        </p>
+        <p>
+            {{n.body4}}
+        </p>
+        <p>
+            {{n.body5}}
+        </p>
+        <p>
+            {{n.bullet1}}
+        </p>
+        <p>
+            {{n.bullet2}}
+        </p>
+        <p>
+            {{n.bullet3}}
+        </p>
+        <p>
+            {{n.bullet4}}
+        </p>
+        <p>
+            {{n.bullet5}}
+        </p>
+    </mat-card>
+</div>
+
+<div *ngFor="let n of news | filter:order[1]">
+    <mat-card class="pad">
+        <p class="titleFont">
+            {{n.title}}
+        </p>
+        <p class="autFont">
+            {{n.author}}
+        </p>
+        <p>
+            {{n.body1}}
+        </p>
+        <p>
+            {{n.body2}}
+        </p>
+        <p>
+            {{n.body3}}
+        </p>
+        <p>
+            {{n.body4}}
+        </p>
+        <p>
+            {{n.body5}}
+        </p>
+        <p>
+            {{n.bullet1}}
+        </p>
+        <p>
+            {{n.bullet2}}
+        </p>
+        <p>
+            {{n.bullet3}}
+        </p>
+        <p>
+            {{n.bullet4}}
+        </p>
+        <p>
+            {{n.bullet5}}
+        </p>
+    </mat-card>
+</div>
+
+<div *ngFor="let n of news | filter:order[2]">
+    <mat-card class="pad">
+        <p class="titleFont">
+            {{n.title}}
+        </p>
+        <p class="autFont">
+            {{n.author}}
+        </p>
+        <p>
+            {{n.body1}}
+        </p>
+        <p>
+            {{n.body2}}
+        </p>
+        <p>
+            {{n.body3}}
+        </p>
+        <p>
+            {{n.body4}}
+        </p>
+        <p>
+            {{n.body5}}
+        </p>
+        <p>
+            {{n.bullet1}}
+        </p>
+        <p>
+            {{n.bullet2}}
+        </p>
+        <p>
+            {{n.bullet3}}
+        </p>
+        <p>
+            {{n.bullet4}}
+        </p>
+        <p>
+            {{n.bullet5}}
+        </p>
+    </mat-card>
+</div>
+
+<div *ngFor="let n of news | filter:order[3]">
+    <mat-card class="pad">
+        <p class="titleFont">
+            {{n.title}}
+        </p>
+        <p class="autFont">
+            {{n.author}}
+        </p>
+        <p>
+            {{n.body1}}
+        </p>
+        <p>
+            {{n.body2}}
+        </p>
+        <p>
+            {{n.body3}}
+        </p>
+        <p>
+            {{n.body4}}
+        </p>
+        <p>
+            {{n.body5}}
+        </p>
+        <p>
+            {{n.bullet1}}
+        </p>
+        <p>
+            {{n.bullet2}}
+        </p>
+        <p>
+            {{n.bullet3}}
+        </p>
+        <p>
+            {{n.bullet4}}
+        </p>
+        <p>
+            {{n.bullet5}}
+        </p>
+    </mat-card>
+</div>
+
+<div *ngFor="let n of news | filter:order[4]">
+    <mat-card class="pad">
+        <p class="titleFont">
+            {{n.title}}
+        </p>
+        <p class="autFont">
+            {{n.author}}
+        </p>
+        <p>
+            {{n.body1}}
+        </p>
+        <p>
+            {{n.body2}}
+        </p>
+        <p>
+            {{n.body3}}
+        </p>
+        <p>
+            {{n.body4}}
+        </p>
+        <p>
+            {{n.body5}}
+        </p>
+        <p>
+            {{n.bullet1}}
+        </p>
+        <p>
+            {{n.bullet2}}
+        </p>
+        <p>
+            {{n.bullet3}}
+        </p>
+        <p>
+            {{n.bullet4}}
+        </p>
+        <p>
+            {{n.bullet5}}
+        </p>
+    </mat-card>
+</div>
+
+<div *ngFor="let n of news | filter:order[5]">
+    <mat-card class="pad">
+        <p class="titleFont">
+            {{n.title}}
+        </p>
+        <p class="autFont">
+            {{n.author}}
+        </p>
+        <p>
+            {{n.body1}}
+        </p>
+        <p>
+            {{n.body2}}
+        </p>
+        <p>
+            {{n.body3}}
+        </p>
+        <p>
+            {{n.body4}}
+        </p>
+        <p>
+            {{n.body5}}
+        </p>
+        <p>
+            {{n.bullet1}}
+        </p>
+        <p>
+            {{n.bullet2}}
+        </p>
+        <p>
+            {{n.bullet3}}
+        </p>
+        <p>
+            {{n.bullet4}}
+        </p>
+        <p>
+            {{n.bullet5}}
+        </p>
+    </mat-card>
+</div>
+
+<div *ngFor="let i of image | filter:filterTerm">
+    <br>
+    <mat-card class="mat-elevation-z0" class='card'>
+        <img mat-card-img class='pos' src={{i.image}}>
+    </mat-card>
+</div>
