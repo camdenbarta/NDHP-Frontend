@@ -12,13 +12,12 @@ import { ToolbarComponent } from './setup/toolbar/toolbar.component';
 import { FooterComponent } from './setup/footer/footer.component';
 import { HeaderComponent } from './setup/header/header.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ToolbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

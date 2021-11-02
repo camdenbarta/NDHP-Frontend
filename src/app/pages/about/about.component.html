@@ -1,16 +1,73 @@
 <mat-card class="pad"><br>
-    <div fxLayout.gt-xs="row">
-        <div *ngFor="let a of about">
-            <p>
-                {{a.paragraph}}
-            </p>
-        </div>
+
+    <div *ngFor="let a of about | filter:order[0]">
+        <p>
+            {{a.paragraph}}
+        </p>
     </div>
-    <div fxLayout.gt-xs="row">
-        <div *ngFor="let a of about">
-            <p>
-                {{a.bullet}}
-            </p>
-        </div>
-    </div><br>
-</mat-card>
+    <div *ngFor="let a of about | filter:order[1]">
+        <p>
+            {{a.paragraph}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[2]">
+        <p>
+            {{a.paragraph}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[3]">
+        <p>
+            {{a.paragraph}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[4]">
+        <p>
+            {{a.paragraph}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[5]">
+        <p>
+            {{a.paragraph}}
+        </p>
+    </div>
+
+    <div *ngFor="let a of about | filter:order[0]">
+        <p>
+            {{a.bullet}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[1]">
+        <p>
+            {{a.bullet}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[2]">
+        <p>
+            {{a.bullet}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[3]">
+        <p>
+            {{a.bullet}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[4]">
+        <p>
+            {{a.bullet}}
+        </p>
+    </div>
+    <div *ngFor="let a of about | filter:order[5]">
+        <p>
+            {{a.bullet}}
+        </p>
+    </div>
+    
+<br></mat-card>
+
+
+<div *ngFor="let i of image | filter:filterTerm">
+    <br>
+    <mat-card class="mat-elevation-z0" class='card'>
+        <img mat-card-img class='pos' src={{i.image}}>
+    </mat-card>
+</div>
