@@ -11,7 +11,6 @@ export class AboutComponent implements OnInit {
   image: any;
   filterTerm = 'About';
   order=['First','Second','Third','Fourth','Fifth','Sixth'];
-  blank="blank";
 
   constructor(
     private listService: ListService
