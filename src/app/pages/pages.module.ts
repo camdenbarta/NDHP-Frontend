@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MaterialModule } from 'src/material.module';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-
+import { SafePipe } from './safe.pipe';
 
 
 @NgModule({
@@ -24,7 +24,9 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     NewslettersComponent, 
     PolicyPositionsComponent, 
     HomeComponent, 
-    NotFoundComponent],
+    NotFoundComponent,
+    SafePipe
+  ],
   imports: [
     CommonModule,
     PagesRoutingModule,
