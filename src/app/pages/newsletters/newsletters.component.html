@@ -243,3 +243,10 @@
         </p>
     </mat-card>
 </div>
+
+<div *ngFor="let i of image | filter:filterTerm">
+    <br>
+    <mat-card class="mat-elevation-z0" class='card'>
+        <img mat-card-img class='pos' src={{i.image}}>
+    </mat-card>
+</div>
