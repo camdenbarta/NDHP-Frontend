@@ -10,6 +10,9 @@
 .large{
     width: 84%;    
 }
+.small{
+    width: 42%; 
+}
 
 $color-outline: #6E0000;
 
@@ -35,4 +38,10 @@ mat-form-field {
 
 .pos{
     width: 100%;
+}
+
+.h{
+    text-align: center;
+    color: #6E0000;
+    text-decoration: underline;
 }

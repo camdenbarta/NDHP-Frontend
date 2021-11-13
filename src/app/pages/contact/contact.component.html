@@ -1,11 +1,17 @@
-<mat-card class="pad"><br>
+<h1 class='h'>Contact</h1>
+<mat-card class="mat-elevation-z5" class="pad"><br>
     <mat-card-title>Contact Us</mat-card-title>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
         <div fxLayoutAlign="center" class="form-row">
-            <mat-form-field appearance="outline" class="large">
-                <mat-label>Full name</mat-label>
-                <input ngModel required matInput placeholder="Enter full name" formControlName="name"/>
+            <mat-form-field appearance="outline" class="small">
+                <mat-label>First Name</mat-label>
+                <input ngModel required matInput placeholder="Enter first name" formControlName="first_name"/>
+            </mat-form-field>       
+
+            <mat-form-field appearance="outline" class="small">
+                <mat-label>Last Name</mat-label>
+                <input ngModel required matInput placeholder="Enter last name" formControlName="last_name"/>
             </mat-form-field>       
         </div>
 
