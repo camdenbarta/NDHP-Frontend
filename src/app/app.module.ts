@@ -11,6 +11,7 @@ import { PagesModule } from './pages/pages.module';
 import { ToolbarComponent } from './setup/toolbar/toolbar.component';
 import { FooterComponent } from './setup/footer/footer.component';
 import { HeaderComponent } from './setup/header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HeaderComponent } from './setup/header/header.component';
     FlexLayoutModule,
     ScullyLibModule,
     PagesModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
