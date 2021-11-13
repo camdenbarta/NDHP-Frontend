@@ -1,6 +1,9 @@
 .pad{
-    text-align: center;
     margin: 2%;
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #C9B884;
     color:#6E0000;
 }
@@ -16,4 +19,13 @@
     text-align: center;
     color: #6E0000;
     text-decoration: underline;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    box-shadow: none;
+    width: 60%;
+    padding: 0em;
 }
