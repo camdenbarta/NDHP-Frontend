@@ -7,8 +7,7 @@ mat-card{
 }
 
 ngb-carousel .wrapper {
-    position: relative;
-    padding-top: 55%; /* Keep ratio for 900x500 images */
+    padding-top: 40%; /* Keep ratio for 900x500 images */
 }
 ngb-carousel .wrapper>img {
     position: absolute;

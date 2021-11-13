@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/api', pathMatch: 'full',
+    path: '', pathMatch: 'full',
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
   }
 ];
@@ -12,4 +12,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
