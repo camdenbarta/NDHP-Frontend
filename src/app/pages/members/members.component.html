@@ -1,129 +1,259 @@
 <h1 class='h'>Meet the Members</h1>
 
-<div *ngFor="let m of member | filter:order[0]">
-    <mat-card class="mat-elevation-z5" class='pad'>
-        <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
-            <div fxLayout="column">
-                <br><p class="space">
-                    <a class="nameFont">
-                        {{m.name}}
-                    </a><br><br>
-                    <a class="titleFont">
-                        {{m.title}}
-                    </a><br><br>
-                    <a class="sumFont">
-                        {{m.about}}
-                    </a>
-                </p>
+<div fxShow="true" fxHide.gt-xs="true">
+    <div *ngFor="let m of member | filter:order[0]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}>
+                <div fxLayout="column">
+                    <br><p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
             </div>
-            <img mat-card-img class='cardimg' src={{m.image}}>
-        </div>
-    </mat-card>
+        </mat-card>
+    </div>
+
+    <div *ngFor="let m of member | filter:order[1]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}><br>
+                <div fxLayout="column">
+                    <p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+    <div *ngFor="let m of member | filter:order[2]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}>
+                <div fxLayout="column">
+                    <br><p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+    <div *ngFor="let m of member | filter:order[3]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}><br>
+                <div fxLayout="column">
+                    <p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+    <div *ngFor="let m of member | filter:order[4]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}>
+                <div fxLayout="column">
+                    <br><p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+    <div *ngFor="let m of member | filter:order[5]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}><br>
+                <div fxLayout="column">
+                    <p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </mat-card>
+    </div>
 </div>
 
-<div *ngFor="let m of member | filter:order[1]">
-    <mat-card class="mat-elevation-z5" class='pad'>
-        <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
-            <img mat-card-img class='cardimg' src={{m.image}}><br>
-            <div fxLayout="column">
-                <p class="space">
-                    <a class="nameFont">
-                        {{m.name}}
-                    </a><br><br>
-                    <a class="titleFont">
-                        {{m.title}}
-                    </a><br><br>
-                    <a class="sumFont">
-                        {{m.about}}
-                    </a>
-                </p>
+<div class="center" fxShow="true" fxHide.lt-sm="true">
+    <div *ngFor="let m of member | filter:order[0]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <div fxLayout="column">
+                    <br><p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+                <img mat-card-img class='cardimg' src={{m.image}}>
             </div>
-        </div>
-    </mat-card>
-</div>
+        </mat-card>
+    </div>
 
-<div *ngFor="let m of member | filter:order[2]">
-    <mat-card class="mat-elevation-z5" class='pad'>
-        <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
-            <div fxLayout="column">
-                <br><p class="space">
-                    <a class="nameFont">
-                        {{m.name}}
-                    </a><br><br>
-                    <a class="titleFont">
-                        {{m.title}}
-                    </a><br><br>
-                    <a class="sumFont">
-                        {{m.about}}
-                    </a>
-                </p>
+    <div *ngFor="let m of member | filter:order[1]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}><br>
+                <div fxLayout="column">
+                    <p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
             </div>
-            <img mat-card-img class='cardimg' src={{m.image}}>
-        </div>
-    </mat-card>
-</div>
+        </mat-card>
+    </div>
 
-<div *ngFor="let m of member | filter:order[3]">
-    <mat-card class="mat-elevation-z5" class='pad'>
-        <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
-            <img mat-card-img class='cardimg' src={{m.image}}><br>
-            <div fxLayout="column">
-                <p class="space">
-                    <a class="nameFont">
-                        {{m.name}}
-                    </a><br><br>
-                    <a class="titleFont">
-                        {{m.title}}
-                    </a><br><br>
-                    <a class="sumFont">
-                        {{m.about}}
-                    </a>
-                </p>
+    <div *ngFor="let m of member | filter:order[2]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <div fxLayout="column">
+                    <br><p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+                <img mat-card-img class='cardimg' src={{m.image}}>
             </div>
-        </div>
-    </mat-card>
-</div>
+        </mat-card>
+    </div>
 
-<div *ngFor="let m of member | filter:order[4]">
-    <mat-card class="mat-elevation-z5" class='pad'>
-        <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
-            <div fxLayout="column">
-                <br><p class="space">
-                    <a class="nameFont">
-                        {{m.name}}
-                    </a><br><br>
-                    <a class="titleFont">
-                        {{m.title}}
-                    </a><br><br>
-                    <a class="sumFont">
-                        {{m.about}}
-                    </a>
-                </p>
+    <div *ngFor="let m of member | filter:order[3]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}><br>
+                <div fxLayout="column">
+                    <p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
             </div>
-            <img mat-card-img class='cardimg' src={{m.image}}>
-        </div>
-    </mat-card>
-</div>
+        </mat-card>
+    </div>
 
-<div *ngFor="let m of member | filter:order[5]">
-    <mat-card class="mat-elevation-z5" class='pad'>
-        <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
-            <img mat-card-img class='cardimg' src={{m.image}}><br>
-            <div fxLayout="column">
-                <p class="space">
-                    <a class="nameFont">
-                        {{m.name}}
-                    </a><br><br>
-                    <a class="titleFont">
-                        {{m.title}}
-                    </a><br><br>
-                    <a class="sumFont">
-                        {{m.about}}
-                    </a>
-                </p>
+    <div *ngFor="let m of member | filter:order[4]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <div fxLayout="column">
+                    <br><p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+                <img mat-card-img class='cardimg' src={{m.image}}>
             </div>
-        </div>
-    </mat-card>
+        </mat-card>
+    </div>
+
+    <div *ngFor="let m of member | filter:order[5]">
+        <mat-card class="mat-elevation-z5" class='pad'>
+            <div fxLayout.gt-xs="row" fxLayout.ls-xs="column">
+                <img mat-card-img class='cardimg' src={{m.image}}><br>
+                <div fxLayout="column">
+                    <p class="space">
+                        <a class="nameFont">
+                            {{m.name}}
+                        </a><br><br>
+                        <a class="titleFont">
+                            {{m.title}}
+                        </a><br><br>
+                        <a class="sumFont">
+                            {{m.about}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </mat-card>
+    </div>
 </div>
 
 <div *ngFor="let i of image | filter:filterTerm">
