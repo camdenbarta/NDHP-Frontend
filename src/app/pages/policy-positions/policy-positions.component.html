@@ -1,1 +1,118 @@
-<p>policy-positions works!</p>
+<h1 class="h">Policy Positions</h1>
+<mat-card class="pad">
+    <div *ngFor="let p of policy | filter:order[0]">
+        <p class="align">
+            {{p.description}}
+        </p>
+        <p class="cen">
+            {{p.bullet1}}
+        </p>
+        <p class="cen">
+            {{p.bullet2}}
+        </p>
+        <p class="cen">
+            {{p.bullet3}}
+        </p>
+        <p class="cen">
+            {{p.bullet4}}
+        </p>
+    </div>
+
+    <div *ngFor="let p of policy | filter:order[1]">
+        <p>
+            {{p.description}}
+        </p>
+        <p class="cen">
+            {{p.bullet1}}
+        </p>
+        <p class="cen">
+            {{p.bullet2}}
+        </p>
+        <p class="cen">
+            {{p.bullet3}}
+        </p>
+        <p class="cen">
+            {{p.bullet4}}
+        </p>
+    </div>
+
+    <div *ngFor="let p of policy | filter:order[2]">
+        <p>
+            {{p.description}}
+        </p>
+        <p class="cen">
+            {{p.bullet1}}
+        </p>
+        <p class="cen">
+            {{p.bullet2}}
+        </p>
+        <p class="cen">
+            {{p.bullet3}}
+        </p>
+        <p class="cen">
+            {{p.bullet4}}
+        </p>
+    </div>
+
+    <div *ngFor="let p of policy | filter:order[3]">
+        <p>
+            {{p.description}}
+        </p>
+        <p class="cen">
+            {{p.bullet1}}
+        </p>
+        <p class="cen">
+            {{p.bullet2}}
+        </p>
+        <p class="cen">
+            {{p.bullet3}}
+        </p>
+        <p class="cen">
+            {{p.bullet4}}
+        </p>
+    </div>
+
+
+    <div *ngFor="let p of policy | filter:order[4]">
+        <p>
+            {{p.description}}
+        </p>
+        <p class="cen">
+            {{p.bullet1}}
+        </p>
+        <p class="cen">
+            {{p.bullet2}}
+        </p>
+        <p class="cen">
+            {{p.bullet3}}
+        </p>
+        <p class="cen">
+            {{p.bullet4}}
+        </p>
+    </div>
+
+    <div *ngFor="let p of policy | filter:order[5]">
+        <p>
+            {{p.description}}
+        </p>
+        <p class="cen">
+            {{p.bullet1}}
+        </p>
+        <p class="cen">
+            {{p.bullet2}}
+        </p>
+        <p class="cen">
+            {{p.bullet3}}
+        </p>
+        <p class="cen">
+            {{p.bullet4}}
+        </p>
+    </div>
+</mat-card>
+
+<div *ngFor="let i of image | filter:filterTerm">
+    <br>
+    <mat-card class="mat-elevation-z0" class='card'>
+        <img mat-card-img class='pos' src={{i.image}}>
+    </mat-card>
+</div>

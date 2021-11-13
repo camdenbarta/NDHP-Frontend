@@ -1,5 +1,4 @@
 .pad{
-    text-align: center;
     margin: 2%;
     background-color: #C9B884;
     color:#6E0000;
@@ -15,4 +14,16 @@
 
 .pos{
     width: 100%;
+}
+.align{
+    text-align: left;
+    margin: 1.5%;
+}
+.cen{
+    margin-inline-start: 7%;
+}
+
+.h{
+    color: #6E0000;
+    text-align: center;
 }

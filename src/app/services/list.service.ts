@@ -26,6 +26,9 @@ export class ListService {
   getNews(): Observable<any> {
     return this.http.get(`${baseUrl}/letter`)
   }
-  
 
+  getPolicy(): Observable<any> {
+    return this.http.get(`${baseUrl}/position`)
+  }
+  
 }

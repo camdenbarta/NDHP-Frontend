@@ -21,7 +21,8 @@ export class ContactComponent implements OnInit {
     private listService: ListService
   ) { 
     this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
+      first_name: ['', Validators.required],
+      last_name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', [Validators.pattern("^[0-9]*$")]],
       message: [''],}),
