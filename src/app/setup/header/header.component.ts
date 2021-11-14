@@ -13,8 +13,9 @@ export class HeaderComponent implements OnInit {
   image: any;
 
   constructor(
-    private listService: ListService
+    private listService: ListService,
   ) { }
+
 
   ngOnInit(): void {
     this.retrieveCarousel();
@@ -31,5 +32,4 @@ export class HeaderComponent implements OnInit {
           console.log(error);
         });
   }
-
 }
