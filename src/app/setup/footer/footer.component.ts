@@ -9,7 +9,8 @@ export class FooterComponent implements OnInit {
 
   gridColumns = 2;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
   }

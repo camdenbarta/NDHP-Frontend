@@ -12,6 +12,8 @@ import { ToolbarComponent } from './setup/toolbar/toolbar.component';
 import { FooterComponent } from './setup/footer/footer.component';
 import { HeaderComponent } from './setup/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatIconModule } from "@angular/material/icon";
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FlexLayoutModule,
     ScullyLibModule,
     PagesModule,
-    NgbModule
+    NgbModule,
+    MatIconModule,
+    AngularSvgIconModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
