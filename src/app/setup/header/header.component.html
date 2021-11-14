@@ -1,3 +1,9 @@
-<mat-card class="mat-elevation-z0">  
-    <img mat-card-image src="../../../assets/img/NDHP-Banner.webp">
-</mat-card>
+<ngb-carousel 
+    [showNavigationArrows]="false"
+>
+    <ng-template ngbSlide *ngFor="let i of image">
+    <div aria-hidden="true" class="wrapper">
+        <img src={{i.image}} alt="Random first slide">
+    </div>
+    </ng-template>
+</ngb-carousel>

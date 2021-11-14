@@ -1,7 +1,16 @@
-mat-card{
+ngb-carousel .wrapper {
+    padding-top: 40%; /* Keep ratio for 900x500 images */
+}
+
+ngb-carousel .wrapper>img {
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent;
-    box-shadow: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 80%;
 }

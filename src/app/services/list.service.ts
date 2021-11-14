@@ -30,5 +30,9 @@ export class ListService {
   getPolicy(): Observable<any> {
     return this.http.get(`${baseUrl}/position`)
   }
+
+  getCarousel(): Observable<any> {
+    return this.http.get(`${baseUrl}/carousel`)
+  }
   
 }
