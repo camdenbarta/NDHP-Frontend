@@ -19,6 +19,7 @@ export class MembersComponent implements OnInit {
 
   ngOnInit(): void {
     this.retrieveMembers();
+    this.retrieveImg()
   }
 
    retrieveMembers(): void {

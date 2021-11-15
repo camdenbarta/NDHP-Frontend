@@ -6,3 +6,28 @@
     background-color: #C9B884;
     color: #6E0000
 }
+
+::ng-deep .mat-menu-content{
+    background-color: #C9B884;
+}
+
+a{
+    color:#6E0000
+  }
+  
+  a:link {
+    color: #6E0000;     
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #835F44;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+    
+  a:active {
+    color: #717D3D;
+    background-color: transparent;
+    text-decoration: underline;
+  }
