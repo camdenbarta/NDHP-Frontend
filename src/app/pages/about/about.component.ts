@@ -9,6 +9,7 @@ import { ListService } from 'src/app/services/list.service';
 export class AboutComponent implements OnInit {
   about: any;
   image: any;
+  video: any;
   filterTerm = 'About';
   order=['First','Second','Third','Fourth','Fifth','Sixth'];
 
@@ -19,6 +20,7 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void { 
     this.retrieveAbout();
     this.retrieveImg();
+    this.retrieveVideo();
   }
 
   retrieveAbout(): void {
@@ -34,10 +36,22 @@ export class AboutComponent implements OnInit {
   }
 
   retrieveImg(): void {
-    this.listService.getImage_Video()
+    this.listService.getImage()
       .subscribe(
         data => {
           this.image = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  retrieveVideo(): void {
+    this.listService.getVideo()
+      .subscribe(
+        data => {
+          this.video = data;
           console.log(data);
         },
         error => {

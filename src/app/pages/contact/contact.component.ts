@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup | any;
   submitted = false;
   image: any;
+  video: any;
   filterTerm = 'Contact';
 
   constructor(
@@ -34,6 +35,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.retrieveImg();
+    this.retrieveVideo
   }
 
   get f(): any { return this.form.controls; }
@@ -76,10 +78,22 @@ export class ContactComponent implements OnInit {
   }  
 
   retrieveImg(): void {
-    this.listService.getImage_Video()
+    this.listService.getImage()
       .subscribe(
         data => {
           this.image = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  retrieveVideo(): void {
+    this.listService.getVideo()
+      .subscribe(
+        data => {
+          this.video = data;
           console.log(data);
         },
         error => {

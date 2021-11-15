@@ -8,6 +8,7 @@ import { ListService } from 'src/app/services/list.service';
 })
 export class Img_VidComponent implements OnInit {
   image: any;
+  video: any;
   filterTerm = 'Archive';
 
   constructor(
@@ -16,13 +17,26 @@ export class Img_VidComponent implements OnInit {
 
   ngOnInit(): void {
     this.retrieveImg()
+    this.retrieveVideo()
   }
 
   retrieveImg(): void {
-    this.listService.getImage_Video()
+    this.listService.getImage()
       .subscribe(
         data => {
           this.image = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  retrieveVideo(): void {
+    this.listService.getVideo()
+      .subscribe(
+        data => {
+          this.video = data;
           console.log(data);
         },
         error => {

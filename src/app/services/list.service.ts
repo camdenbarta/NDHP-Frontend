@@ -15,8 +15,12 @@ export class ListService {
     return this.http.get(`${baseUrl}/about`)
   }
 
-  getImage_Video(): Observable<any> {
-    return this.http.get(`${baseUrl}/image-video`)
+  getImage(): Observable<any> {
+    return this.http.get(`${baseUrl}/img`)
+  }
+
+  getVideo(): Observable<any> {
+    return this.http.get(`${baseUrl}/vd`)
   }
 
   getMember(): Observable<any> {

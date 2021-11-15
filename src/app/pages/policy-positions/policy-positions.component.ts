@@ -9,6 +9,7 @@ import { ListService } from 'src/app/services/list.service';
 export class PolicyPositionsComponent implements OnInit {
   policy: any;
   image: any;
+  video: any;
   filterTerm = 'Policy Positions';
   order=['First','Second','Third','Fourth','Fifth','Sixth'];
 
@@ -19,6 +20,7 @@ export class PolicyPositionsComponent implements OnInit {
   ngOnInit(): void {
     this.retrievePolicy();
     this.retrieveImg();
+    this.retrieveVideo();
   }
 
   retrievePolicy(): void {
@@ -34,10 +36,22 @@ export class PolicyPositionsComponent implements OnInit {
   }
 
   retrieveImg(): void {
-    this.listService.getImage_Video()
+    this.listService.getImage()
       .subscribe(
         data => {
           this.image = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  retrieveVideo(): void {
+    this.listService.getVideo()
+      .subscribe(
+        data => {
+          this.video = data;
           console.log(data);
         },
         error => {

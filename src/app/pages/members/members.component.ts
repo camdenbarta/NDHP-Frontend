@@ -10,6 +10,7 @@ export class MembersComponent implements OnInit {
   member: any;
   filterTerm = "Meet the Members"
   image: any;
+  video: any;
   order=['First','Second','Third','Fourth','Fifth','Sixth'];
 
 
@@ -19,7 +20,8 @@ export class MembersComponent implements OnInit {
 
   ngOnInit(): void {
     this.retrieveMembers();
-    this.retrieveImg()
+    this.retrieveImg();
+    this.retrieveVideo();
   }
 
    retrieveMembers(): void {
@@ -35,10 +37,22 @@ export class MembersComponent implements OnInit {
     }
 
     retrieveImg(): void {
-      this.listService.getImage_Video()
+      this.listService.getImage()
         .subscribe(
           data => {
             this.image = data;
+            console.log(data);
+          },
+          error => {
+            console.log(error);
+          });
+    }
+
+    retrieveVideo(): void {
+      this.listService.getVideo()
+        .subscribe(
+          data => {
+            this.video = data;
             console.log(data);
           },
           error => {

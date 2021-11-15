@@ -70,10 +70,3 @@
         <img mat-card-img class='pos' src={{i.image}}>
     </mat-card>
 </div>
-
-<div *ngFor="let i of image | filter:filterTerm">
-    <br>
-    <mat-card class="mat-elevation-z0" class='card'> 
-        <iframe class="pos" height="575" [src]="i.video_URL|safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </mat-card>
-</div>
