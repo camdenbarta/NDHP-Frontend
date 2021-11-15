@@ -13,6 +13,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { MaterialModule } from 'src/material.module';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SafePipe } from './safe.pipe';
+import { Img_VidComponent } from './img-vid/img_vid.component';
+import { News2021Component } from './news2021/news2021.component';
+import { News2022Component } from './news2022/news2022.component';
+import { News2023Component } from './news2023/news2023.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { SafePipe } from './safe.pipe';
     PolicyPositionsComponent, 
     HomeComponent, 
     NotFoundComponent,
-    SafePipe
+    SafePipe,
+    Img_VidComponent,
+    News2021Component,
+    News2022Component,
+    News2023Component
   ],
   imports: [
     CommonModule,

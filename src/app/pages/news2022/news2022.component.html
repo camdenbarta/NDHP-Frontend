@@ -1,0 +1,44 @@
+<h1 class='h'>News Letters from 2022</h1>
+<div *ngFor="let n of news | filter:filterTerm">
+    <mat-card class="mat-elevation-z5" class="pad">
+        <p class="titleFont">
+            {{n.title}}
+        </p>
+        <p class="autFont">
+            {{n.author}}
+        </p>
+        <p class="created">
+            {{n.getDate}}
+        </p>
+        <p>
+            {{n.body1}}
+        </p>
+        <p>
+            {{n.body2}}
+        </p>
+        <p>
+            {{n.body3}}
+        </p>
+        <p>
+            {{n.body4}}
+        </p>
+        <p>
+            {{n.body5}}
+        </p>
+        <p>
+            {{n.bullet1}}
+        </p>
+        <p>
+            {{n.bullet2}}
+        </p>
+        <p>
+            {{n.bullet3}}
+        </p>
+        <p>
+            {{n.bullet4}}
+        </p>
+        <p>
+            {{n.bullet5}}
+        </p>
+    </mat-card>
+</div>
