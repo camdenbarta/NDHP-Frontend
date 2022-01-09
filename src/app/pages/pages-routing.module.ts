@@ -14,17 +14,17 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PolicyPositionsComponent } from './policy-positions/policy-positions.component';
 
 const routes: Routes = [
-  { path: 'api', component: HomeComponent},
-  { path: 'api/about', component: AboutComponent},
-  { path: 'api/archive', component: ArchiveComponent},
-  { path: 'api/contact', component:ContactComponent},
-  { path: 'api/meet-members', component: MembersComponent},
-  { path: 'api/news-letters', component: NewslettersComponent},
-  { path: 'api/news-letters/2021', component: News2021Component},
-  { path: 'api/news-letters/2022', component: News2022Component},
-  { path: 'api/news-letters/2023', component: News2023Component},
-  { path: 'api/policy-positions', component: PolicyPositionsComponent},
-  { path: 'api/images', component: Img_VidComponent},
+  { path: '', component: HomeComponent},
+  { path: 'about', component: AboutComponent},
+  { path: 'archive', component: ArchiveComponent},
+  { path: 'contact', component:ContactComponent},
+  { path: 'meet-members', component: MembersComponent},
+  { path: 'news-letters', component: NewslettersComponent},
+  { path: 'news-letters/2021', component: News2021Component},
+  { path: 'news-letters/2022', component: News2022Component},
+  { path: 'news-letters/2023', component: News2023Component},
+  { path: 'policy-positions', component: PolicyPositionsComponent},
+  { path: 'images', component: Img_VidComponent},
   { path: '**', component: NotFoundComponent},
 ];
 

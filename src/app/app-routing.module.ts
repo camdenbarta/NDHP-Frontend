@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo: "/api", pathMatch: 'full'},
   {
     path: '', pathMatch: 'full',
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)

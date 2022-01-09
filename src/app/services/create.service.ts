@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Contact } from '../models/contact';
 
-const baseUrl = 'localhost:8000/api'
+const baseUrl = 'https://ndhp.info'
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class CreateService {
   constructor(private http: HttpClient) { }
 
   submitContact(contact: Contact): Observable<any> {
-    return this.http.post(`${baseUrl}/contact/`, contact);
+    return this.http.post(`${baseUrl}/cont/`, contact);
   }
 
   emailContact(contact: Contact): Observable<any> {

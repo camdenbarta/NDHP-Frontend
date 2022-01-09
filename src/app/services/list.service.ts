@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'http://localhost:8000/api';
+const baseUrl = 'https://ndhp.info';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class ListService {
   constructor(private http: HttpClient) { }
 
   getAbout(): Observable<any> {
-    return this.http.get(`${baseUrl}/about`)
+    return this.http.get(`${baseUrl}/abt`)
   }
 
   getImage(): Observable<any> {

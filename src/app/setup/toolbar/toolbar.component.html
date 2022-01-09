@@ -4,42 +4,42 @@
             <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-            <a mat-menu-item routerLink="/api/about">About</a>  
+            <a mat-menu-item routerLink="/about">About</a>  
             <a mat-menu-item [matMenuTriggerFor]="arch">Archive</a>
                 <mat-menu #arch="matMenu">
-                    <a mat-menu-item routerLink="/api/images">Images and Videos</a>
+                    <a mat-menu-item routerLink="/images">Images and Videos</a>
                     <a mat-menu-item [matMenuTriggerFor]="news">News Letters</a>
                         <mat-menu #news="matMenu">
-                            <a mat-menu-item routerLink="/api/news-letters/2021">2021</a>
-                            <a mat-menu-item routerLink="/api/news-letters/2022">2022</a>
-                            <a mat-menu-item routerLink="/api/news-letters/2023">2023</a>
+                            <a mat-menu-item routerLink="/news-letters/2021">2021</a>
+                            <a mat-menu-item routerLink="/news-letters/2022">2022</a>
+                            <a mat-menu-item routerLink="/news-letters/2023">2023</a>
                         </mat-menu>
                 </mat-menu>
-            <a mat-menu-item routerLink="/api/contact">Contact</a>
-            <a mat-menu-item routerLink="/api/meet-members">Meet the Members</a>                 
-            <a mat-menu-item routerLink="/api/news-letters">News Letters</a>
-            <a mat-menu-item routerLink="/api/policy-positions">Policy Positions</a>                 
+            <a mat-menu-item routerLink="/contact">Contact</a>
+            <a mat-menu-item routerLink="/meet-members">Meet the Members</a>                 
+            <a mat-menu-item routerLink="/news-letters">News Letters</a>
+            <a mat-menu-item routerLink="/policy-positions">Policy Positions</a>                 
         </mat-menu>
       </div>
-    <a mat-button routerLink="/api">
+    <a mat-button routerLink="">
         North Dakota Heritage Party
     </a>
     <div class="center" fxShow="true" fxHide.lt-md="true">
-        <a mat-button routerLink="/api/about">About</a>
+        <a mat-button routerLink="/about">About</a>
         <a mat-button [matMenuTriggerFor]="arch">Archive</a>
             <mat-menu #arch="matMenu">
-                <a mat-menu-item routerLink="/api/archive">Images and Videos</a>
+                <a mat-menu-item routerLink="/archive">Images and Videos</a>
                 <a mat-menu-item [matMenuTriggerFor]="news">News Letters</a>
                     <mat-menu #news="matMenu">
-                        <a mat-menu-item routerLink="/api/news-letters/2021">2021</a>
-                        <a mat-menu-item routerLink="/api/news-letters/2022">2022</a>
-                        <a mat-menu-item routerLink="/api/news-letters/2023">2023</a>
+                        <a mat-menu-item routerLink="/news-letters/2021">2021</a>
+                        <a mat-menu-item routerLink="/news-letters/2022">2022</a>
+                        <a mat-menu-item routerLink="/news-letters/2023">2023</a>
                     </mat-menu>
             </mat-menu>
-        <a mat-button routerLink="/api/contact">Contact</a>
-        <a mat-button routerLink="/api/meet-members">Meet the Members</a>
-        <a mat-button routerLink="/api/news-letters">News Letters</a>
-        <a mat-button routerLink="/api/policy-positions">Policy Positions</a>
+        <a mat-button routerLink="/contact">Contact</a>
+        <a mat-button routerLink="/meet-members">Meet the Members</a>
+        <a mat-button routerLink="/news-letters">News Letters</a>
+        <a mat-button routerLink="/policy-positions">Policy Positions</a>
     </div>
 </mat-toolbar>
 
