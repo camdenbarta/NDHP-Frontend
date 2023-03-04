@@ -34,4 +34,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `npm audit fix --force`
 `npm i --force`
 `npm fund`
-`npm audit fix'
+`npm audit fix`
