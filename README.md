@@ -27,11 +27,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Compile and Run
-'npm i -force'
-'npm i -g npm-check-updates'
-'ncu -u'
-'npm fund'
-'npm audit fix --force' 
-'npm i --force' 
-'npm fund'
-'npm audit fix'
+`npm i -force`
+`npm i -g npm-check-updates`
+`ncu -u`
+`npm fund`
+`npm audit fix --force`
+`npm i --force`
+`npm fund`
+`npm audit fix'
